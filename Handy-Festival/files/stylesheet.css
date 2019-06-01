@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    color: white;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: auto;
+    justify-content: center;
+}
+
+/* drop down */
+.dropdown {
+    position: relative;
+    background-color: #666666;
+    width: 268px;  
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.dropbtn {
+    transition: 0.8s;
+    background-color: #666666;
+    color: white;
+    padding: 11px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 28px;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #0d0d0d;
+    width: 268px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+    z-index: 1;
+}
+
+.dropdown_content span {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: white;
+}
+
+.dropdown_content span:hover {
+    background-color: #595959;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #404040;
+    padding: 24px 10px;
+}
+
+.dropdown:hover {
+    margin-top: 2px;
+}
+
+/* end of drop down */
+
+.search {
+    padding: 1px 0px 1px 0px;
+    width: 268px;
+    height: 49px;
+    font-family: "Franklin Gothic Bold", "Franklin Gothic";
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center; 
+    background-color: #cccccc; 
+}
+
+.search::placeholder{
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.box {
+    cursor: pointer;
+    width: 104px;
+    height: 89px;
+    margin: 8px;
+    border-radius: 5%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.jazz {
+    background-color: #660033;
+}
+
+.rock {
+    background-color: #f07a53;
+}
+
+.blues {
+    background-color: rgba(51, 204, 51, .4);
+}
+
+.food{
+    background-color: #ffde6f9d;
+}
+
+.art_festivities {
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #ffcc99;
+}
+
+.all_events {
+    font-weight: 500;
+    font-size: 28px;
+    padding-top: 10px;
+    background-color: #006666ff;
+}
+
+.misc {
+    background-color: rgba(200, 0, 0, .6);
+}
+
+.view_schedule {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    background-color: #00264def;
+}
+
+
+.events_container {
+    font-family: 'ArialMT', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+}
+
+.when, .where, .what, .type {
+    font-family: 'Arial Bold', 'Arial';
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.button {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 10px;
+    color: white;
+    margin: 8px;
+    border-radius: 9%;
+    text-align: center;
+}
+
+.big_button {
+    width: 110px;
+    height: 34px;
+    padding-top: 10px;
+}
+
+.small_button {
+    width: 57px;
+    height: 29px;
+    padding-top: 6px;
+}
+
+.user_input {
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    flex-wrap: wrap;
+    margin: 10% auto;
+}
+
+.login_header {
+    font-size: 40px;
+    align-self: center;
+    padding: 15px;
+}
+
+.submit_button {
+    background-color: #00264def;
+}
+
+#admin_options {
+    display: none;
+    justify-content: center;
+}
+
+#file_name {
+    color: black;
+}
+
+#users_option {
+    display: none;
+    justify-content: center;
+}
+
+#user_signup {
+    display: none;
+    justify-content: center;
+}
+
+.option_button{
+    background-color: #00264def;
+}
+
+.text_area {
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.text_area:focus {
+    font-size: 15px;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,1);
+}
+
+#event_url {
+    width: 350px;
+}
+
+#youtubeWindow {
+    display: none;
+}
+
+.no-close .ui-dialog-titlebar-close {
+    display: none;
+}
+    
+#admin_password {
+    margin-left: 3px;
+}
+
+#admin_login {
+    display: none;
+    color: black;
+}
+
+#admin_insert {
+    display: none;
+    color: black;
+}
+
+#user_password {
+    margin-left: 3px;
+}
+
+#user_login {
+    display: none;
+    color: black;
+    width: 420px;
+}
+
+.upload_file {
+    display: none;
+}
+
+#welcome_user {
+    margin-bottom: 5px;
+    flex: 100%;
+    text-align: center;
+    color: black;
+}
+
+.notification{
+    font-size: 25px;
+    margin-right: 20px; 
+}
+
+.instructions {
+    font-size: 13px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+}
+
+.addToSchedule {
+    background-color: #00264def;
+}
+
+#submit_upload {
+    background-color: #00264def;
+    text-align: center;
+    padding: 0;
+}
+
+.removeFromSchedule {
+    background-color: #00264def;
+}
+
+.deleteEvent {
+    background-color: #00264def;
+}
+
+#logout {
+    display: none;
+    background-color: #00264def;
+}
+
+#read_file {
+    display: none;
+    background-color: #00264def;
+}
+
+##welcome_admin {
+    color: black;
+}
+
+.moreInfo {
+    background-color: rgba(230, 0, 0, .7);
+}
+
+.playArtist {
+    background-color:  rgba(255, 163, 26, .9);
+    border: solid 1px rgb(179, 209, 255);
+}
+
+.back {
+    display: block;
+    margin: 20px;
+    width: 141px;
+    height: 41px;
+    font-family: 'ArialMT', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    background-color: #00264def;
+    padding-top: 13px;
+}
+
+.box:hover {
+    animation: bounce 1s;
+}
+
+.ui-widget {
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 900px){
+    /* For tablets */
+    .main_container {width: 800px}
+    .search {width: 600px}
+    .dropdown {width: 600px}
+    .dropdown_content{width: 600px}
+    .box {
+        width: 304px;
+        height: 240px;
+        padding-top: 65px;
+        font-size: 80px;
+    }
+    
+    .art_festivities {
+        font-size: 55px;
+        padding-top: 35px;
+    }
+    
+    .all_events {
+        font-size: 70px;
+        padding-top: 30px;
+    }
+    
+    .view_schedule {
+        font-size: 60px;
+        padding-top: 35px;
+    }
+    
+}
+
+@media only screen and (min-width: 1000px){
+    /* For monitors, Tvs */
+    .main_container {width: 750px}
+    .search {width: 500px}
+    .dropdown {width: 500px}
+    .dropdown_content{width: 500px}
+    .box {
+        width: 240px;
+        height: 160px;
+        padding-top: 50px;
+        font-size: 50px;
+    }
+    
+    .art_festivities {
+        font-size: 45px;
+        padding-top: 30px;
+    }
+    
+    .all_events {
+        font-size: 55px;
+        padding-top: 15px;
+    }
+    
+    .view_schedule {
+        font-size: 45px;
+        padding-top: 25px;
+    }
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+
+
+
+
+

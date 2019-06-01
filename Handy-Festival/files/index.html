@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>W.C. Handy Music Festival </title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        
+        
+        <script
+			  src="https://code.jquery.com/jquery-3.4.0.js"
+			  integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+			  crossorigin="anonymous"></script>
+        <script type="text/javascript" src="test.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+    
+    <body>
+        
+        <div class="main_container">
+            
+            <div id="welcome_user"></div>
+            
+            <nav class="dropdown">
+                <div class="dropbtn">Menu</div>
+                <div class="dropdown_content">
+                    <span id="admin">Admin</span>
+                    <span id="users">Users</span>
+                </div>
+            </nav>
+            
+            <div>
+                <input class="search" id="searchfield" type="text" placeholder="Search Festival">
+            </div>
+            
+            <div class="jazz box">
+                Jazz   
+            </div>
+            
+            <div class="blues box">
+                Blues
+            </div>
+            
+            <div class="rock box">
+                Rock
+            </div>          
+            
+            <div class="food box">
+                Food
+            </div>
+                     
+            <div class="art_festivities box">
+                Art Festivities
+            </div>            
+            
+            <div class="misc box">
+                Misc
+            </div>
+            
+            <div class="all_events box">
+                All Events
+            </div>
+            
+            <div class="view_schedule box">
+                View Schedule
+            </div>
+            
+        </div>
+        
+        
+        <div class="events_container"></div>
+        
+        <div id="logout" class="button big_button">Log out</div>
+        
+        <div class="user_input" id="admin_login">
+            <div class="login_header">Admin login: </div>
+            <input class="text_area" id="admin_username" type="text" placeholder="Enter your username" required="true">
+            <input class="text_area" id="admin_password" type="password" placeholder="Enter your password" required="true">
+            
+            <div class="button big_button submit_button" id="admin_submit_button" value="Submit">Submit</div>
+        </div>
+        
+        <div class="user_input" id="admin_insert">
+            <div class="login_header" id="welcome_admin"></div>
+            <input class="text_area" id="event_name" type="text" placeholder="Enter the name of the event" required="true">
+            <input class="text_area" id="event_type" type="text" placeholder="Enter the type of the event" required="true">
+            <input class="text_area" id="event_when" type="text" placeholder="When is the event" required="true">
+            <input class="text_area" id="event_where" type="text" placeholder="Where is the event" required="true">
+            <input class="text_area" id="event_url" type="text" placeholder="Youtube sample video">
+            
+            <div class="button big_button submit_button" id="insert_submit_button" value="Submit">Submit</div>
+        </div>
+        
+        <div id="admin_options" class="user_input">
+            <div class="button big_button option_button" id="insert_option">Insert event</div>
+            <div class="button big_button option_button" id="delete_option">Delete event</div>
+            <div class="button big_button option_button" id="upload_option">Upload excel file</div>
+        </div>
+        
+        <div class="upload_file">
+            <form ref='uploadForm' 
+                id='uploadForm' 
+                action='/upload' 
+                method='POST' 
+                encType="multipart/form-data">
+                    <input type="file" id="file_name" name="excelFile" required="true" />
+                    <input type='submit' class="button big_button" id="submit_upload" value='Upload!' />
+            </form> 
+        </div>
+        
+        <div id="read_file" class="button big_button">Read events from the excel file</div>
+        
+        
+        <div id="users_option" class="user_input">
+            <div class="button big_button option_button" id="login_option">Log in</div>
+            <div class="button big_button option_button" id="signup_option">Sign up</div>
+        </div>
+        
+        <div class="user_input" id="user_login">
+            <div class="login_header">User login: </div>
+            <input class="text_area" id="user_username" type="text" placeholder="Enter your username" required="true">
+            <input class="text_area" id="user_password" type="password" placeholder="Enter your password" required="true">
+            
+            <div class="button big_button submit_button" id="user_submit_button" value="Submit">Submit</div>
+        </div>
+        
+        <div class="user_input" id="user_signup">
+            <div class="login_header">User sign up: </div>
+            <input class="text_area" id="user_signup_username" type="text" placeholder="Enter your username" required="true">
+            <input class="text_area" id="user_signup_password" type="password" placeholder="Enter your password" required="true">
+            <input class="text_area" id="user_repeat_password" type="password" placeholder="Repeat your password" required="true">
+            
+            <div class="button big_button submit_button" id="signup_submit_button" value="Submit">Submit</div>
+        </div>
+        
+        <div id="dialog" title="Sample video">
+ 
+            <iframe id="youtubeWindow" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        
+    </body>
+
+</html>
